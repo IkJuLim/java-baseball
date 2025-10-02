@@ -6,8 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StringNum2IntegerListParser {
+
+    private static final int MAX_LENGTH = 3;
+
     public List<Integer> parse(String numString){
-        if(numString.length() != 3){
+        if(numString.length() != MAX_LENGTH){
             throw new IllegalInputNumberException("잘못된 길이의 입력 입니다.");
         }
 
